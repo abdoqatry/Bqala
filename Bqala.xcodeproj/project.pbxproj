@@ -7,21 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035A4DE84D6D36A91473B49E /* Pods_Bqala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1E035F1261E7941BFAD3F9 /* Pods_Bqala.framework */; };
 		DD3EBBBE22980B7300541E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBBD22980B7300541E99 /* AppDelegate.swift */; };
-		DD3EBBC022980B7300541E99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBBF22980B7300541E99 /* ViewController.swift */; };
-		DD3EBBC322980B7300541E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3EBBC122980B7300541E99 /* Main.storyboard */; };
 		DD3EBBC522980B7600541E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3EBBC422980B7600541E99 /* Assets.xcassets */; };
 		DD3EBBC822980B7600541E99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3EBBC622980B7600541E99 /* LaunchScreen.storyboard */; };
+		DD3EBBDD22980D1000541E99 /* extension+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD022980D0F00541E99 /* extension+NSLayoutConstraint.swift */; };
+		DD3EBBDE22980D1000541E99 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD122980D0F00541E99 /* ImageHelper.swift */; };
+		DD3EBBDF22980D1000541E99 /* extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD222980D0F00541E99 /* extension+String.swift */; };
+		DD3EBBE022980D1000541E99 /* extension+CALayer+ApplyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD322980D0F00541E99 /* extension+CALayer+ApplyShadow.swift */; };
+		DD3EBBE122980D1000541E99 /* UIGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD422980D0F00541E99 /* UIGradient.swift */; };
+		DD3EBBE222980D1000541E99 /* extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD522980D1000541E99 /* extension+UITextField.swift */; };
+		DD3EBBE322980D1000541E99 /* UIGradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD622980D1000541E99 /* UIGradientHelper.swift */; };
+		DD3EBBE422980D1000541E99 /* extension+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD722980D1000541E99 /* extension+Gradient.swift */; };
+		DD3EBBE522980D1000541E99 /* extension+UIColor+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD822980D1000541E99 /* extension+UIColor+UIFonts.swift */; };
+		DD3EBBE622980D1000541E99 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBD922980D1000541E99 /* UIImage+.swift */; };
+		DD3EBBE722980D1000541E99 /* UIGradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBDA22980D1000541E99 /* UIGradientExtension.swift */; };
+		DD3EBBE822980D1000541E99 /* extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBDB22980D1000541E99 /* extension+UIViewController.swift */; };
+		DD3EBBE922980D1000541E99 /* UIGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBDC22980D1000541E99 /* UIGradientLayer.swift */; };
+		DD3EBBF922981BD800541E99 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBF822981BD800541E99 /* BaseController.swift */; };
+		DD3EBBFC2298214E00541E99 /* DLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3EBBFB2298214E00541E99 /* DLoginVC.swift */; };
+		DD5525BD229989E900EDE862 /* DLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5525BC229989E900EDE862 /* DLoginView.swift */; };
+		DDD9C8B5229A963D009E742C /* DRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8B4229A963D009E742C /* DRegisterVC.swift */; };
+		DDD9C8B7229A9664009E742C /* DRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8B6229A9664009E742C /* DRegisterView.swift */; };
+		DDD9C8B9229AC230009E742C /* DRegisterPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8B8229AC230009E742C /* DRegisterPhotosView.swift */; };
+		DDD9C8BB229AC24A009E742C /* DRegisterPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8BA229AC24A009E742C /* DRegisterPhotosVC.swift */; };
+		DDD9C8BD229ACD2B009E742C /* DCarRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8BC229ACD2B009E742C /* DCarRegisterView.swift */; };
+		DDD9C8BF229ACD49009E742C /* DcarRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8BE229ACD49009E742C /* DcarRegisterVC.swift */; };
+		DDD9C8C1229AD921009E742C /* DCityRegisterVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8C0229AD921009E742C /* DCityRegisterVc.swift */; };
+		DDD9C8C3229AD9B4009E742C /* DCityRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C8C2229AD9B4009E742C /* DCityRegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603E8DB2F1242C8E7541D257 /* Pods-Bqala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bqala.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bqala/Pods-Bqala.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1E035F1261E7941BFAD3F9 /* Pods_Bqala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bqala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D188738372D1B23E5520F872 /* Pods-Bqala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bqala.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bqala/Pods-Bqala.release.xcconfig"; sourceTree = "<group>"; };
 		DD3EBBBA22980B7300541E99 /* Bqala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bqala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3EBBBD22980B7300541E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD3EBBBF22980B7300541E99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD3EBBC222980B7300541E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD3EBBC422980B7600541E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3EBBC722980B7600541E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3EBBC922980B7600541E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3EBBD022980D0F00541E99 /* extension+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		DD3EBBD122980D0F00541E99 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		DD3EBBD222980D0F00541E99 /* extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+String.swift"; sourceTree = "<group>"; };
+		DD3EBBD322980D0F00541E99 /* extension+CALayer+ApplyShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+CALayer+ApplyShadow.swift"; sourceTree = "<group>"; };
+		DD3EBBD422980D0F00541E99 /* UIGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradient.swift; sourceTree = "<group>"; };
+		DD3EBBD522980D1000541E99 /* extension+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+UITextField.swift"; sourceTree = "<group>"; };
+		DD3EBBD622980D1000541E99 /* UIGradientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradientHelper.swift; sourceTree = "<group>"; };
+		DD3EBBD722980D1000541E99 /* extension+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+Gradient.swift"; sourceTree = "<group>"; };
+		DD3EBBD822980D1000541E99 /* extension+UIColor+UIFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+UIColor+UIFonts.swift"; sourceTree = "<group>"; };
+		DD3EBBD922980D1000541E99 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		DD3EBBDA22980D1000541E99 /* UIGradientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradientExtension.swift; sourceTree = "<group>"; };
+		DD3EBBDB22980D1000541E99 /* extension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+UIViewController.swift"; sourceTree = "<group>"; };
+		DD3EBBDC22980D1000541E99 /* UIGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradientLayer.swift; sourceTree = "<group>"; };
+		DD3EBBEB22980D6000541E99 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		DD3EBBEC22980D6000541E99 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		DD3EBBED22980D6000541E99 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DD3EBBEE22980D6000541E99 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		DD3EBBEF22980D6000541E99 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		DD3EBBF022980D6000541E99 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		DD3EBBF122980D6000541E99 /* 32312226.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 32312226.ttf; sourceTree = "<group>"; };
+		DD3EBBF822981BD800541E99 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		DD3EBBFB2298214E00541E99 /* DLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLoginVC.swift; sourceTree = "<group>"; };
+		DD5525BC229989E900EDE862 /* DLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLoginView.swift; sourceTree = "<group>"; };
+		DDD9C8B4229A963D009E742C /* DRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRegisterVC.swift; sourceTree = "<group>"; };
+		DDD9C8B6229A9664009E742C /* DRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRegisterView.swift; sourceTree = "<group>"; };
+		DDD9C8B8229AC230009E742C /* DRegisterPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRegisterPhotosView.swift; sourceTree = "<group>"; };
+		DDD9C8BA229AC24A009E742C /* DRegisterPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRegisterPhotosVC.swift; sourceTree = "<group>"; };
+		DDD9C8BC229ACD2B009E742C /* DCarRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCarRegisterView.swift; sourceTree = "<group>"; };
+		DDD9C8BE229ACD49009E742C /* DcarRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DcarRegisterVC.swift; sourceTree = "<group>"; };
+		DDD9C8C0229AD921009E742C /* DCityRegisterVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCityRegisterVc.swift; sourceTree = "<group>"; };
+		DDD9C8C2229AD9B4009E742C /* DCityRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCityRegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035A4DE84D6D36A91473B49E /* Pods_Bqala.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA790D49F7408D68AB202C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				603E8DB2F1242C8E7541D257 /* Pods-Bqala.debug.xcconfig */,
+				D188738372D1B23E5520F872 /* Pods-Bqala.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4623588127C43756848B6C70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E035F1261E7941BFAD3F9 /* Pods_Bqala.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD3EBBB122980B7300541E99 = {
 			isa = PBXGroup;
 			children = (
 				DD3EBBBC22980B7300541E99 /* Bqala */,
 				DD3EBBBB22980B7300541E99 /* Products */,
+				1FA790D49F7408D68AB202C6 /* Pods */,
+				4623588127C43756848B6C70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +129,140 @@
 		DD3EBBBC22980B7300541E99 /* Bqala */ = {
 			isa = PBXGroup;
 			children = (
-				DD3EBBBD22980B7300541E99 /* AppDelegate.swift */,
-				DD3EBBBF22980B7300541E99 /* ViewController.swift */,
-				DD3EBBC122980B7300541E99 /* Main.storyboard */,
-				DD3EBBC422980B7600541E99 /* Assets.xcassets */,
-				DD3EBBC622980B7600541E99 /* LaunchScreen.storyboard */,
+				DD3EBBF322981B8000541E99 /* Delevery */,
 				DD3EBBC922980B7600541E99 /* Info.plist */,
+				DD3EBBF222980F2300541E99 /* Utilities */,
+				DD3EBBEA22980D4900541E99 /* font */,
+				DD3EBBCF22980CE500541E99 /* Extentions */,
 			);
 			path = Bqala;
+			sourceTree = "<group>";
+		};
+		DD3EBBCF22980CE500541E99 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				DD3EBBD322980D0F00541E99 /* extension+CALayer+ApplyShadow.swift */,
+				DD3EBBD722980D1000541E99 /* extension+Gradient.swift */,
+				DD3EBBD022980D0F00541E99 /* extension+NSLayoutConstraint.swift */,
+				DD3EBBD222980D0F00541E99 /* extension+String.swift */,
+				DD3EBBD822980D1000541E99 /* extension+UIColor+UIFonts.swift */,
+				DD3EBBD522980D1000541E99 /* extension+UITextField.swift */,
+				DD3EBBDB22980D1000541E99 /* extension+UIViewController.swift */,
+				DD3EBBD122980D0F00541E99 /* ImageHelper.swift */,
+				DD3EBBD422980D0F00541E99 /* UIGradient.swift */,
+				DD3EBBDA22980D1000541E99 /* UIGradientExtension.swift */,
+				DD3EBBD622980D1000541E99 /* UIGradientHelper.swift */,
+				DD3EBBDC22980D1000541E99 /* UIGradientLayer.swift */,
+				DD3EBBD922980D1000541E99 /* UIImage+.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		DD3EBBEA22980D4900541E99 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				DD3EBBF122980D6000541E99 /* 32312226.ttf */,
+				DD3EBBF022980D6000541E99 /* Cairo-Black.ttf */,
+				DD3EBBEC22980D6000541E99 /* Cairo-Bold.ttf */,
+				DD3EBBED22980D6000541E99 /* Cairo-ExtraLight.ttf */,
+				DD3EBBEE22980D6000541E99 /* Cairo-Light.ttf */,
+				DD3EBBEB22980D6000541E99 /* Cairo-Regular.ttf */,
+				DD3EBBEF22980D6000541E99 /* Cairo-SemiBold.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		DD3EBBF222980F2300541E99 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DD3EBBC622980B7600541E99 /* LaunchScreen.storyboard */,
+				DD3EBBC422980B7600541E99 /* Assets.xcassets */,
+				DD3EBBBD22980B7300541E99 /* AppDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DD3EBBF322981B8000541E99 /* Delevery */ = {
+			isa = PBXGroup;
+			children = (
+				DD3EBBF622981BA900541E99 /* Model */,
+				DD3EBBF522981BA100541E99 /* View */,
+				DD3EBBF422981B8E00541E99 /* Controller */,
+			);
+			path = Delevery;
+			sourceTree = "<group>";
+		};
+		DD3EBBF422981B8E00541E99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3EBBFA229820F800541E99 /* Auth */,
+				DD3EBBF722981BB400541E99 /* BaseController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD3EBBF522981BA100541E99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD5525BB2299889700EDE862 /* Auth */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD3EBBF622981BA900541E99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DD3EBBF722981BB400541E99 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				DD3EBBF822981BD800541E99 /* BaseController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		DD3EBBFA229820F800541E99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9C8B2229A960B009E742C /* RegisterVc */,
+				DD3EBBFB2298214E00541E99 /* DLoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DD5525BB2299889700EDE862 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9C8B3229A9619009E742C /* RegisterView */,
+				DD5525BC229989E900EDE862 /* DLoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DDD9C8B2229A960B009E742C /* RegisterVc */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9C8B4229A963D009E742C /* DRegisterVC.swift */,
+				DDD9C8BA229AC24A009E742C /* DRegisterPhotosVC.swift */,
+				DDD9C8BE229ACD49009E742C /* DcarRegisterVC.swift */,
+				DDD9C8C0229AD921009E742C /* DCityRegisterVc.swift */,
+			);
+			path = RegisterVc;
+			sourceTree = "<group>";
+		};
+		DDD9C8B3229A9619009E742C /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9C8B6229A9664009E742C /* DRegisterView.swift */,
+				DDD9C8B8229AC230009E742C /* DRegisterPhotosView.swift */,
+				DDD9C8BC229ACD2B009E742C /* DCarRegisterView.swift */,
+				DDD9C8C2229AD9B4009E742C /* DCityRegisterView.swift */,
+			);
+			path = RegisterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD3EBBCC22980B7600541E99 /* Build configuration list for PBXNativeTarget "Bqala" */;
 			buildPhases = (
+				688AECEA18428575E90E2D91 /* [CP] Check Pods Manifest.lock */,
 				DD3EBBB622980B7300541E99 /* Sources */,
 				DD3EBBB722980B7300541E99 /* Frameworks */,
 				DD3EBBB822980B7300541E99 /* Resources */,
+				3BB4B1DD80DB10A18E88B689 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +327,98 @@
 			files = (
 				DD3EBBC822980B7600541E99 /* LaunchScreen.storyboard in Resources */,
 				DD3EBBC522980B7600541E99 /* Assets.xcassets in Resources */,
-				DD3EBBC322980B7300541E99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BB4B1DD80DB10A18E88B689 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bqala/Pods-Bqala-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MOLH/MOLH.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOLH.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bqala/Pods-Bqala-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688AECEA18428575E90E2D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bqala-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD3EBBB622980B7300541E99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD3EBBC022980B7300541E99 /* ViewController.swift in Sources */,
+				DDD9C8B7229A9664009E742C /* DRegisterView.swift in Sources */,
+				DDD9C8B5229A963D009E742C /* DRegisterVC.swift in Sources */,
+				DD3EBBE122980D1000541E99 /* UIGradient.swift in Sources */,
+				DD5525BD229989E900EDE862 /* DLoginView.swift in Sources */,
 				DD3EBBBE22980B7300541E99 /* AppDelegate.swift in Sources */,
+				DD3EBBE022980D1000541E99 /* extension+CALayer+ApplyShadow.swift in Sources */,
+				DD3EBBDD22980D1000541E99 /* extension+NSLayoutConstraint.swift in Sources */,
+				DDD9C8BB229AC24A009E742C /* DRegisterPhotosVC.swift in Sources */,
+				DD3EBBE222980D1000541E99 /* extension+UITextField.swift in Sources */,
+				DDD9C8BD229ACD2B009E742C /* DCarRegisterView.swift in Sources */,
+				DD3EBBDF22980D1000541E99 /* extension+String.swift in Sources */,
+				DDD9C8C1229AD921009E742C /* DCityRegisterVc.swift in Sources */,
+				DDD9C8C3229AD9B4009E742C /* DCityRegisterView.swift in Sources */,
+				DD3EBBE722980D1000541E99 /* UIGradientExtension.swift in Sources */,
+				DD3EBBE822980D1000541E99 /* extension+UIViewController.swift in Sources */,
+				DDD9C8BF229ACD49009E742C /* DcarRegisterVC.swift in Sources */,
+				DD3EBBE422980D1000541E99 /* extension+Gradient.swift in Sources */,
+				DD3EBBE322980D1000541E99 /* UIGradientHelper.swift in Sources */,
+				DDD9C8B9229AC230009E742C /* DRegisterPhotosView.swift in Sources */,
+				DD3EBBFC2298214E00541E99 /* DLoginVC.swift in Sources */,
+				DD3EBBE622980D1000541E99 /* UIImage+.swift in Sources */,
+				DD3EBBDE22980D1000541E99 /* ImageHelper.swift in Sources */,
+				DD3EBBE522980D1000541E99 /* extension+UIColor+UIFonts.swift in Sources */,
+				DD3EBBF922981BD800541E99 /* BaseController.swift in Sources */,
+				DD3EBBE922980D1000541E99 /* UIGradientLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD3EBBC122980B7300541E99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD3EBBC222980B7300541E99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD3EBBC622980B7600541E99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -213,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +548,7 @@
 		};
 		DD3EBBCD22980B7600541E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603E8DB2F1242C8E7541D257 /* Pods-Bqala.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +567,7 @@
 		};
 		DD3EBBCE22980B7600541E99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D188738372D1B23E5520F872 /* Pods-Bqala.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

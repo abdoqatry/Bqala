@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.8.2)
+  - IQKeyboardManagerSwift (6.3.0)
+  - Kingfisher (5.4.0)
+  - MOLH (0.8)
+  - SideMenu (5.0.3)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MOLH
+  - SideMenu
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MOLH
+    - SideMenu
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  MOLH: b9766efe89be975ce82a8d5642f681da23c876fc
+  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 07fe2c3876813e9bb9a7c7fdb022c72961fe67e3
+
+COCOAPODS: 1.5.2

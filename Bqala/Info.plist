@@ -20,10 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Use camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string> photo use</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cairo-Regular.ttf</string>
+		<string>Cairo-Black.ttf</string>
+		<string>Cairo-Bold.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
