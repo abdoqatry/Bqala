@@ -64,7 +64,8 @@ class DRegisterView: UIView {
         text.placeholder = "user name"
 //        text.keyboardType = .asciiCapableNumberPad
 //        text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
+//        text.isSecureTextEntry = true
+        text.font = UIFont.systemFont(ofSize: 13)
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -90,6 +91,7 @@ class DRegisterView: UIView {
         image.image = UIImage(named: "smartphone-call")
         image.contentMode = .scaleAspectFit
         
+        
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -97,8 +99,9 @@ class DRegisterView: UIView {
         let text = UITextField()
         text.placeholder = "phone number"
         text.keyboardType = .asciiCapableNumberPad
-        text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
+//        text.keyboardType = .asciiCapable
+//        text.isSecureTextEntry = true
+        text.font = UIFont.systemFont(ofSize: 13)
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -130,14 +133,49 @@ class DRegisterView: UIView {
     var mail : UITextField = {
         let text = UITextField()
         text.placeholder = "your mail"
-//        text.keyboardType = .asciiCapableNumberPad
-//        text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
+        text.keyboardType = .asciiCapableNumberPad
+        text.keyboardType = .asciiCapable
+//        text.isSecureTextEntry = true
+        text.font = UIFont.systemFont(ofSize: 13)
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
     var line3 : UIView = {
+        let view = UIView()
+        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    //   place
+    var placeView : UIView = {
+        let view = UIView()
+        //                view.backgroundColor = .green
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    var placeImage : UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "envelope (1)")
+        image.contentMode = .scaleAspectFit
+        
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+    }()
+    var place : UITextField = {
+        let text = UITextField()
+        text.placeholder = "your place"
+        //        text.keyboardType = .asciiCapableNumberPad
+        //        text.keyboardType = .asciiCapable
+//        text.isSecureTextEntry = true
+        text.font = UIFont.systemFont(ofSize: 13)
+        //        text.backgroundColor = .green
+        text.translatesAutoresizingMaskIntoConstraints = false
+        return text
+    }()
+    var line33 : UIView = {
         let view = UIView()
         view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
@@ -167,7 +205,7 @@ class DRegisterView: UIView {
         text.keyboardType = .asciiCapableNumberPad
         text.keyboardType = .asciiCapable
         text.isSecureTextEntry = true
-        text.isSecureTextEntry = true
+        text.font = UIFont.systemFont(ofSize: 13)
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -202,7 +240,7 @@ class DRegisterView: UIView {
         text.keyboardType = .asciiCapableNumberPad
         text.keyboardType = .asciiCapable
         text.isSecureTextEntry = true
-        text.isSecureTextEntry = true
+        text.font = UIFont.systemFont(ofSize: 13)
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -263,21 +301,21 @@ class DRegisterView: UIView {
         // user view
         mainView.addSubview(userView)
         NSLayoutConstraint.activate([
-            userView.topAnchor.constraint(equalTo: singLabel.bottomAnchor, constant: 30),
+            userView.topAnchor.constraint(equalTo: singLabel.bottomAnchor, constant: 50),
             userView.leadingAnchor.constraint(equalTo: singLabel.leadingAnchor, constant: 0),
             userView.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
-            userView.heightAnchor.constraint(equalToConstant: 40)
+            userView.heightAnchor.constraint(equalToConstant: 30)
             ])
         mainView.addSubview(userImage)
         NSLayoutConstraint.activate([
             userImage.trailingAnchor.constraint(equalTo: userView.trailingAnchor, constant: 5),
-            userImage.topAnchor.constraint(equalTo: userView.topAnchor, constant: 10),
-            userImage.heightAnchor.constraint(equalToConstant: 20),
-            userImage.widthAnchor.constraint(equalToConstant: 20)
+            userImage.topAnchor.constraint(equalTo: userView.topAnchor, constant: 5),
+            userImage.heightAnchor.constraint(equalToConstant: 15),
+            userImage.widthAnchor.constraint(equalToConstant: 15)
             ])
         mainView.addSubview(user)
         NSLayoutConstraint.activate([
-            user.topAnchor.constraint(equalTo: userView.topAnchor, constant: 15),
+            user.topAnchor.constraint(equalTo: userView.topAnchor, constant: 10),
             user.leadingAnchor.constraint(equalTo: userView.leadingAnchor, constant: 0),
             user.trailingAnchor.constraint(equalTo: userImage.leadingAnchor, constant: -5)
             ])
@@ -292,21 +330,21 @@ class DRegisterView: UIView {
         // phone numbr
         mainView.addSubview(phoneView)
         NSLayoutConstraint.activate([
-            phoneView.topAnchor.constraint(equalTo: userView.bottomAnchor, constant: 10),
+            phoneView.topAnchor.constraint(equalTo: userView.bottomAnchor, constant: 5),
             phoneView.leadingAnchor.constraint(equalTo: singLabel.leadingAnchor, constant: 0),
             phoneView.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
-            phoneView.heightAnchor.constraint(equalToConstant: 40)
+            phoneView.heightAnchor.constraint(equalToConstant: 30)
             ])
         mainView.addSubview(phoneImage)
         NSLayoutConstraint.activate([
-            phoneImage.trailingAnchor.constraint(equalTo: phoneView.trailingAnchor, constant: 5),
-            phoneImage.topAnchor.constraint(equalTo: phoneView.topAnchor, constant: 10),
-            phoneImage.heightAnchor.constraint(equalToConstant: 20),
-            phoneImage.widthAnchor.constraint(equalToConstant: 20)
+            phoneImage.trailingAnchor.constraint(equalTo: phoneView.trailingAnchor, constant: 0),
+            phoneImage.topAnchor.constraint(equalTo: phoneView.topAnchor, constant: 5),
+            phoneImage.heightAnchor.constraint(equalToConstant: 15),
+            phoneImage.widthAnchor.constraint(equalToConstant: 15)
             ])
         mainView.addSubview(phone)
         NSLayoutConstraint.activate([
-            phone.topAnchor.constraint(equalTo: phoneView.topAnchor, constant: 15),
+            phone.topAnchor.constraint(equalTo: phoneView.topAnchor, constant: 10),
             phone.leadingAnchor.constraint(equalTo: phoneView.leadingAnchor, constant: 0),
             phone.trailingAnchor.constraint(equalTo: phoneImage.leadingAnchor, constant: -5)
             ])
@@ -324,18 +362,18 @@ class DRegisterView: UIView {
             emailView.topAnchor.constraint(equalTo: phoneView.bottomAnchor, constant: 10),
             emailView.leadingAnchor.constraint(equalTo: singLabel.leadingAnchor, constant: 0),
             emailView.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
-            emailView.heightAnchor.constraint(equalToConstant: 40)
+            emailView.heightAnchor.constraint(equalToConstant: 30)
             ])
         mainView.addSubview(emailImage)
         NSLayoutConstraint.activate([
-            emailImage.trailingAnchor.constraint(equalTo: emailView.trailingAnchor, constant: 5),
+            emailImage.trailingAnchor.constraint(equalTo: emailView.trailingAnchor, constant: 0),
             emailImage.topAnchor.constraint(equalTo: emailView.topAnchor, constant: 10),
-            emailImage.heightAnchor.constraint(equalToConstant: 20),
-            emailImage.widthAnchor.constraint(equalToConstant: 20)
+            emailImage.heightAnchor.constraint(equalToConstant: 15),
+            emailImage.widthAnchor.constraint(equalToConstant: 15)
             ])
         mainView.addSubview(mail)
         NSLayoutConstraint.activate([
-            mail.topAnchor.constraint(equalTo: emailView.topAnchor, constant: 15),
+            mail.topAnchor.constraint(equalTo: emailView.topAnchor, constant: 10),
             mail.leadingAnchor.constraint(equalTo: emailView.leadingAnchor, constant: 0),
             mail.trailingAnchor.constraint(equalTo: emailImage.leadingAnchor, constant: -5)
             ])
@@ -346,24 +384,52 @@ class DRegisterView: UIView {
             line3.trailingAnchor.constraint(equalTo: emailView.trailingAnchor, constant: 0),
             line3.heightAnchor.constraint(equalToConstant: 1)
             ])
+        // place
+        mainView.addSubview(placeView)
+        NSLayoutConstraint.activate([
+            placeView.topAnchor.constraint(equalTo: emailView.bottomAnchor, constant: 5),
+            placeView.leadingAnchor.constraint(equalTo: singLabel.leadingAnchor, constant: 0),
+            placeView.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
+            placeView.heightAnchor.constraint(equalToConstant: 30)
+            ])
+        mainView.addSubview(placeImage)
+        NSLayoutConstraint.activate([
+            placeImage.trailingAnchor.constraint(equalTo: placeView.trailingAnchor, constant: 0),
+            placeImage.topAnchor.constraint(equalTo: placeView.topAnchor, constant: 10),
+            placeImage.heightAnchor.constraint(equalToConstant: 15),
+            placeImage.widthAnchor.constraint(equalToConstant: 15)
+            ])
+        mainView.addSubview(place)
+        NSLayoutConstraint.activate([
+            place.topAnchor.constraint(equalTo: placeView.topAnchor, constant: 10),
+            place.leadingAnchor.constraint(equalTo: placeView.leadingAnchor, constant: 0),
+            place.trailingAnchor.constraint(equalTo: emailImage.leadingAnchor, constant: -5)
+            ])
+        mainView.addSubview(line33)
+        NSLayoutConstraint.activate([
+            line33.topAnchor.constraint(equalTo: placeView.bottomAnchor, constant: 0),
+            line33.leadingAnchor.constraint(equalTo: placeView.leadingAnchor, constant: 0),
+            line33.trailingAnchor.constraint(equalTo: placeView.trailingAnchor, constant: 0),
+            line33.heightAnchor.constraint(equalToConstant: 1)
+            ])
         // password
         mainView.addSubview(passwordView)
         NSLayoutConstraint.activate([
-            passwordView.topAnchor.constraint(equalTo: emailView.bottomAnchor, constant: 10),
+            passwordView.topAnchor.constraint(equalTo: placeView.bottomAnchor, constant: 10),
             passwordView.leadingAnchor.constraint(equalTo: singLabel.leadingAnchor, constant: 0),
             passwordView.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
-            passwordView.heightAnchor.constraint(equalToConstant: 40)
+            passwordView.heightAnchor.constraint(equalToConstant: 30)
             ])
         mainView.addSubview(passwordImage)
         NSLayoutConstraint.activate([
-            passwordImage.trailingAnchor.constraint(equalTo: passwordView.trailingAnchor, constant: 5),
+            passwordImage.trailingAnchor.constraint(equalTo: passwordView.trailingAnchor, constant: 0),
             passwordImage.topAnchor.constraint(equalTo: passwordView.topAnchor, constant: 10),
             passwordImage.heightAnchor.constraint(equalToConstant: 15),
             passwordImage.widthAnchor.constraint(equalToConstant: 15)
             ])
         mainView.addSubview(password)
         NSLayoutConstraint.activate([
-            password.topAnchor.constraint(equalTo: passwordView.topAnchor, constant: 15),
+            password.topAnchor.constraint(equalTo: passwordView.topAnchor, constant: 10),
             password.leadingAnchor.constraint(equalTo: passwordView.leadingAnchor, constant: 0),
             password.trailingAnchor.constraint(equalTo: passwordImage.leadingAnchor, constant: -5)
             ])
@@ -380,18 +446,18 @@ class DRegisterView: UIView {
             repasswordView.topAnchor.constraint(equalTo: passwordView.bottomAnchor, constant: 10),
             repasswordView.leadingAnchor.constraint(equalTo: singLabel.leadingAnchor, constant: 0),
             repasswordView.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
-            repasswordView.heightAnchor.constraint(equalToConstant: 40)
+            repasswordView.heightAnchor.constraint(equalToConstant: 30)
             ])
         mainView.addSubview(repasswordImage)
         NSLayoutConstraint.activate([
-            repasswordImage.trailingAnchor.constraint(equalTo: repasswordView.trailingAnchor, constant: 5),
+            repasswordImage.trailingAnchor.constraint(equalTo: repasswordView.trailingAnchor, constant: 0),
             repasswordImage.topAnchor.constraint(equalTo: repasswordView.topAnchor, constant: 10),
             repasswordImage.heightAnchor.constraint(equalToConstant: 15),
             repasswordImage.widthAnchor.constraint(equalToConstant: 15)
             ])
         mainView.addSubview(repassword)
         NSLayoutConstraint.activate([
-            repassword.topAnchor.constraint(equalTo: repasswordView.topAnchor, constant: 15),
+            repassword.topAnchor.constraint(equalTo: repasswordView.topAnchor, constant: 10),
             repassword.leadingAnchor.constraint(equalTo: repasswordView.leadingAnchor, constant: 0),
             repassword.trailingAnchor.constraint(equalTo: repasswordImage.leadingAnchor, constant: -5)
             ])
@@ -404,7 +470,7 @@ class DRegisterView: UIView {
             ])
         mainView.addSubview(NextButton)
         NSLayoutConstraint.activate([
-            NextButton.topAnchor.constraint(equalTo: repasswordView.bottomAnchor, constant: 40),
+            NextButton.topAnchor.constraint(equalTo: repasswordView.bottomAnchor, constant: 30),
             NextButton.leadingAnchor.constraint(equalTo: mainImage.leadingAnchor, constant: 60),
             NextButton.heightAnchor.constraint(equalToConstant: 35),
             NextButton.widthAnchor.constraint(equalToConstant: 160)

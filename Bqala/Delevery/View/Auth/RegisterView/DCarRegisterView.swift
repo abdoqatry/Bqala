@@ -47,7 +47,7 @@ class DCarRegisterView: UIView {
         text.placeholder = "kind of car"
         //        text.keyboardType = .asciiCapableNumberPad
         //        text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
+//        text.isSecureTextEntry = true
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -81,7 +81,7 @@ class DCarRegisterView: UIView {
         text.placeholder = "car number"
         text.keyboardType = .asciiCapableNumberPad
         text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
+//        text.isSecureTextEntry = true
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -115,7 +115,7 @@ class DCarRegisterView: UIView {
         text.placeholder = "carModel"
         //        text.keyboardType = .asciiCapableNumberPad
         //        text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
+//        text.isSecureTextEntry = true
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
@@ -184,8 +184,7 @@ class DCarRegisterView: UIView {
         text.placeholder = "identity number"
         text.keyboardType = .asciiCapableNumberPad
         text.keyboardType = .asciiCapable
-        text.isSecureTextEntry = true
-        text.isSecureTextEntry = true
+        
         //        text.backgroundColor = .green
         text.translatesAutoresizingMaskIntoConstraints = false
         return text

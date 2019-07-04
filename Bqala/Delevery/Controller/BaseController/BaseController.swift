@@ -25,7 +25,7 @@ class BaseController: UIViewController {
     }
     
     final func setupNavigationBar() {
-        self.navigationController?.navigationBar.barTintColor =  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1);        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor =  #colorLiteral(red: 0.06274509804, green: 0.5098039216, blue: 0.8588235294, alpha: 1);        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.isTranslucent = false
         let attributes = [ NSAttributedString.Key.foregroundColor: UIColor.white
         ]
@@ -91,7 +91,7 @@ class BaseController: UIViewController {
     
     //    Mark:-  side menu func
      func setupSideMenu() {
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: DLoginVC())
+        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: DSideMenuVC())
         
         //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
         
@@ -105,7 +105,7 @@ class BaseController: UIViewController {
         //          SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
 //        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
         //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+//        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
         // (Optional) Prevent status bar area from turning black when menu appears:
         SideMenuManager.default.menuFadeStatusBar = false
         SideMenuManager.default.menuAnimationBackgroundColor = nil
@@ -130,85 +130,85 @@ class BaseController: UIViewController {
             present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
         }
     }
-    
-    func setupREfSideMenu() {
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: DLoginVC())
-        
-        //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
-        
-        
-        if langue == "en"{
-            SideMenuManager.default.menuLeftNavigationController = menuRightNavigationController
-        }else if langue == "ar"{
-            SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-        }
-        
-        //          SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
-        //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-//        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
-        // (Optional) Prevent status bar area from turning black when menu appears:
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuAnimationBackgroundColor = nil
-        SideMenuManager.default.menuAnimationFadeStrength = 0
-        SideMenuManager.default.menuDismissOnPush = true
-        SideMenuManager.default.menuPushStyle = .defaultBehavior
-        
-        SideMenuManager.default.menuEnableSwipeGestures = false
-        
-        SideMenuManager.default.menuAllowPushOfSameClassTwice = true
-        
-        SideMenuManager.default.menuPresentMode = .menuSlideIn
-        //        SideMenuManager.default.menuFadeStatusBar = true
-        SideMenuManager.default.menuWidth = max(round(min((view.frame.width), (view.frame.height)) * 0.85), 300)
-    }
-    @objc func handleRefMenuTapped() {
-        
-        if langue == "en"{
-            present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
-        }else if langue == "ar"{
-            present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
-        }
-    }
-    
-    func setupManSideMenu() {
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: DLoginVC())
-        
-        //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
-        
-        
-        if langue == "en"{
-            SideMenuManager.default.menuLeftNavigationController = menuRightNavigationController
-        }else if langue == "ar"{
-            SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-        }
-        
-        //          SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
-        //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-//        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
-        // (Optional) Prevent status bar area from turning black when menu appears:
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuAnimationBackgroundColor = nil
-        SideMenuManager.default.menuAnimationFadeStrength = 0
-        SideMenuManager.default.menuDismissOnPush = true
-        SideMenuManager.default.menuPushStyle = .defaultBehavior
-        
-        SideMenuManager.default.menuEnableSwipeGestures = false
-        
-        SideMenuManager.default.menuAllowPushOfSameClassTwice = true
-        
-        SideMenuManager.default.menuPresentMode = .menuSlideIn
-        //        SideMenuManager.default.menuFadeStatusBar = true
-        SideMenuManager.default.menuWidth = max(round(min((view.frame.width), (view.frame.height)) * 0.85), 300)
-    }
-    @objc func handleManMenuTapped() {
-        
-        if langue == "en"{
-            present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
-        }else if langue == "ar"{
-            present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
-        }
-    }
+//
+//    func setupREfSideMenu() {
+//        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: DLoginVC())
+//
+//        //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
+//
+//
+//        if langue == "en"{
+//            SideMenuManager.default.menuLeftNavigationController = menuRightNavigationController
+//        }else if langue == "ar"{
+//            SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
+//        }
+//
+//        //          SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+//        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
+//        //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+////        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+//        // (Optional) Prevent status bar area from turning black when menu appears:
+//        SideMenuManager.default.menuFadeStatusBar = false
+//        SideMenuManager.default.menuAnimationBackgroundColor = nil
+//        SideMenuManager.default.menuAnimationFadeStrength = 0
+//        SideMenuManager.default.menuDismissOnPush = true
+//        SideMenuManager.default.menuPushStyle = .defaultBehavior
+//
+//        SideMenuManager.default.menuEnableSwipeGestures = false
+//
+//        SideMenuManager.default.menuAllowPushOfSameClassTwice = true
+//
+//        SideMenuManager.default.menuPresentMode = .menuSlideIn
+//        //        SideMenuManager.default.menuFadeStatusBar = true
+//        SideMenuManager.default.menuWidth = max(round(min((view.frame.width), (view.frame.height)) * 0.85), 300)
+//    }
+//    @objc func handleRefMenuTapped() {
+//
+//        if langue == "en"{
+//            present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+//        }else if langue == "ar"{
+//            present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+//        }
+//    }
+//
+//    func setupManSideMenu() {
+//        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: DLoginVC())
+//
+//        //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
+//
+//
+//        if langue == "en"{
+//            SideMenuManager.default.menuLeftNavigationController = menuRightNavigationController
+//        }else if langue == "ar"{
+//            SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
+//        }
+//
+//        //          SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+//        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
+//        //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+////        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+//        // (Optional) Prevent status bar area from turning black when menu appears:
+//        SideMenuManager.default.menuFadeStatusBar = false
+//        SideMenuManager.default.menuAnimationBackgroundColor = nil
+//        SideMenuManager.default.menuAnimationFadeStrength = 0
+//        SideMenuManager.default.menuDismissOnPush = true
+//        SideMenuManager.default.menuPushStyle = .defaultBehavior
+//
+//        SideMenuManager.default.menuEnableSwipeGestures = false
+//
+//        SideMenuManager.default.menuAllowPushOfSameClassTwice = true
+//
+//        SideMenuManager.default.menuPresentMode = .menuSlideIn
+//        //        SideMenuManager.default.menuFadeStatusBar = true
+//        SideMenuManager.default.menuWidth = max(round(min((view.frame.width), (view.frame.height)) * 0.85), 300)
+//    }
+//    @objc func handleManMenuTapped() {
+//
+//        if langue == "en"{
+//            present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+//        }else if langue == "ar"{
+//            present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+//        }
+//    }
 }
 

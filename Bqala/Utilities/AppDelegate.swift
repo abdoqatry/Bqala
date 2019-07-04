@@ -8,6 +8,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,11 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        
+        FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
 //        IQKeyboardManager.shared.keyboardDistanceFromTextField = 20
         
-        let nav1 = UINavigationController(rootViewController: DCityRegisterVc())
+        let nav1 = UINavigationController(rootViewController: DLoginVC())
         window!.rootViewController = nav1
         
         return true

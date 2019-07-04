@@ -100,7 +100,7 @@ class DCityRegisterView: UIView {
     }()
     var Area : UITextField = {
         let text = UITextField()
-        text.placeholder = "City"
+        text.placeholder = "Area"
         //        text.keyboardType = .asciiCapableNumberPad
         //        text.keyboardType = .asciiCapable
         text.isSecureTextEntry = true
@@ -114,6 +114,50 @@ class DCityRegisterView: UIView {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
+    }()
+    // place
+    var notcheckButton2 : UIButton = {
+        let butt = UIButton()
+        butt.setImage(UIImage(named: "checkd"), for: .normal)
+        //        butt.backgroundColor = .
+        //        butt.isHidden = true
+        butt.translatesAutoresizingMaskIntoConstraints = false
+        return butt
+    }()
+    var checkButton2 : UIButton = {
+        let butt = UIButton()
+        butt.setImage(UIImage(named: "checked"), for: .normal)
+        //        butt.backgroundColor = .red
+        butt.isHidden = true
+        butt.translatesAutoresizingMaskIntoConstraints = false
+        return butt
+    }()
+    var placeLabel : UILabel = {
+        let label = UILabel()
+        label.text = "current place"
+        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    var currentPlace : UILabel = {
+        let label = UILabel()
+        label.text = "current place"
+        label.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    var NextButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.5333333333, green: 0.7098039216, blue: 0.2901960784, alpha: 1)
+        button.layer.cornerRadius = 16
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     override init(frame: CGRect) {
@@ -140,14 +184,14 @@ class DCityRegisterView: UIView {
             ])
         mainView.addSubview(checkButton)
         NSLayoutConstraint.activate([
-            checkButton.leadingAnchor.constraint(equalTo: mainImage.leadingAnchor, constant: 50),
+            checkButton.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
             checkButton.topAnchor.constraint(equalTo: mainImage.topAnchor, constant: 120),
             checkButton.heightAnchor.constraint(equalToConstant: 16),
             checkButton.widthAnchor.constraint(equalToConstant: 16)
             ])
         mainView.addSubview(notcheckButton)
         NSLayoutConstraint.activate([
-            notcheckButton.leadingAnchor.constraint(equalTo: mainImage.leadingAnchor, constant: 50),
+            notcheckButton.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
             notcheckButton.topAnchor.constraint(equalTo: mainImage.topAnchor, constant: 120),
             notcheckButton.heightAnchor.constraint(equalToConstant: 16),
             notcheckButton.widthAnchor.constraint(equalToConstant: 16)
@@ -155,7 +199,7 @@ class DCityRegisterView: UIView {
         mainView.addSubview(searchLabel)
         NSLayoutConstraint.activate([
         searchLabel.topAnchor.constraint(equalTo: notcheckButton.topAnchor, constant: 0),
-        searchLabel.leadingAnchor.constraint(equalTo: notcheckButton.trailingAnchor, constant: 10),
+        searchLabel.trailingAnchor.constraint(equalTo: notcheckButton.leadingAnchor, constant: -10),
             ])
         
         
@@ -170,8 +214,8 @@ class DCityRegisterView: UIView {
                 NSLayoutConstraint.activate([
         CityImage.trailingAnchor.constraint(equalTo: CityView.trailingAnchor, constant: 5),
         CityImage.topAnchor.constraint(equalTo: CityView.topAnchor, constant: 10),
-        CityImage.heightAnchor.constraint(equalToConstant: 20),
-        CityImage.widthAnchor.constraint(equalToConstant: 20)
+        CityImage.heightAnchor.constraint(equalToConstant: 15),
+        CityImage.widthAnchor.constraint(equalToConstant: 15)
                     ])
         mainView.addSubview(City)
         NSLayoutConstraint.activate([
@@ -199,8 +243,8 @@ class DCityRegisterView: UIView {
         NSLayoutConstraint.activate([
             AreaImage.trailingAnchor.constraint(equalTo: AreaView.trailingAnchor, constant: 5),
             AreaImage.topAnchor.constraint(equalTo: AreaView.topAnchor, constant: 10),
-            AreaImage.heightAnchor.constraint(equalToConstant: 20),
-            AreaImage.widthAnchor.constraint(equalToConstant: 20)
+            AreaImage.heightAnchor.constraint(equalToConstant: 15),
+            AreaImage.widthAnchor.constraint(equalToConstant: 15)
             ])
         mainView.addSubview(Area)
         NSLayoutConstraint.activate([
@@ -216,6 +260,39 @@ class DCityRegisterView: UIView {
         line2.heightAnchor.constraint(equalToConstant: 1)
             ])
         
+        mainView.addSubview(checkButton2)
+        NSLayoutConstraint.activate([
+            checkButton2.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
+            checkButton2.topAnchor.constraint(equalTo: line2.bottomAnchor, constant: 30),
+            checkButton2.heightAnchor.constraint(equalToConstant: 16),
+            checkButton2.widthAnchor.constraint(equalToConstant: 16)
+            ])
+        mainView.addSubview(notcheckButton2)
+        NSLayoutConstraint.activate([
+    notcheckButton2.trailingAnchor.constraint(equalTo: mainImage.trailingAnchor, constant: -50),
+    notcheckButton2.topAnchor.constraint(equalTo: line2.bottomAnchor, constant: 30),
+    notcheckButton2.heightAnchor.constraint(equalToConstant: 16),
+    notcheckButton2.widthAnchor.constraint(equalToConstant: 16)
+            ])
+        mainView.addSubview(placeLabel)
+        NSLayoutConstraint.activate([
+            placeLabel.topAnchor.constraint(equalTo: notcheckButton2.topAnchor, constant: 0),
+            placeLabel.trailingAnchor.constraint(equalTo: notcheckButton2.leadingAnchor, constant: -10),
+            ])
+        mainView.addSubview(currentPlace)
+        NSLayoutConstraint.activate([
+            currentPlace.topAnchor.constraint(equalTo: placeLabel.bottomAnchor, constant: 20),
+            currentPlace.trailingAnchor.constraint(equalTo: notcheckButton.trailingAnchor, constant: 5),
+            
+            ])
+        mainView.addSubview(NextButton)
+        NSLayoutConstraint.activate([
+            NextButton.topAnchor.constraint(equalTo: currentPlace.bottomAnchor, constant: 40),
+            NextButton.leadingAnchor.constraint(equalTo: mainImage.leadingAnchor, constant: 60),
+            NextButton.heightAnchor.constraint(equalToConstant: 35),
+            NextButton.widthAnchor.constraint(equalToConstant: 160)
+            ])
+
         
     }
     

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Delevery/Controller/Home/DHomeVc.swift"
+            timestampString = "582454865.670943"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Delevery/Controller/Home/DHomeVc.swift"
+            timestampString = "582454865.671066"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Extentions/ViewController+.swift"
+            timestampString = "582390691.268074"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "callApi(_:url:method:parameters:shouldShowAlert:activityIndicator:comp:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Bqala):__C.UIViewController.callApi&lt;A where A: Bqala.BaseCodable&gt;(_: A.Type, url: Swift.String, method: Alamofire.HTTPMethod, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, shouldShowAlert: Swift.Bool, activityIndicator: Swift.Optional&lt;__C.UIActivityIndicatorView&gt;, comp: (Swift.Optional&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Extentions/ViewController+.swift"
+                  timestampString = "581175178.741202"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "374">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;A&gt;) -&gt; () in (extension in Bqala):__C.UIViewController.callApi&lt;A where A: Bqala.BaseCodable&gt;(_: A.Type, url: Swift.String, method: Alamofire.HTTPMethod, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, shouldShowAlert: Swift.Bool, activityIndicator: Swift.Optional&lt;__C.UIActivityIndicatorView&gt;, comp: (Swift.Optional&lt;A&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Extentions/ViewController+.swift"
+                  timestampString = "581175178.746243"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "301">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Delevery/Network/Network.swift"
+            timestampString = "582482039.851766"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getData(_:url:parameters:method:complation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Delevery/Controller/OrderDetails/OrderDetailsVc.swift"
+            timestampString = "582315697.269985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bqala.OrderDetailsVc.getData() -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Delevery/Controller/OrderDetails/OrderDetailsVc.swift"
+                  timestampString = "582128563.503338"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "859">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Bqala.CartDet&gt;) -&gt; () in Bqala.OrderDetailsVc.getData() -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Delevery/Controller/OrderDetails/OrderDetailsVc.swift"
+                  timestampString = "582128563.507226"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Delevery/Controller/orderRecord/OrderRecordVC.swift"
+            timestampString = "582400665.979506"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "handelApi()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bqala.OrderRecordVC.handelApi() -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Delevery/Controller/orderRecord/OrderRecordVC.swift"
+                  timestampString = "582217862.258999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Bqala.pastOrder&gt;) -&gt; () in Bqala.OrderRecordVC.handelApi() -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Delevery/Controller/orderRecord/OrderRecordVC.swift"
+                  timestampString = "582217862.262653"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bqala/Delevery/Controller/orderRecord/OrderRecordVC.swift"
+            timestampString = "582400665.9796129"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "handelApi2()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bqala.OrderRecordVC.handelApi2() -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Delevery/Controller/orderRecord/OrderRecordVC.swift"
+                  timestampString = "582217862.2699521"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Bqala.pastOrder&gt;) -&gt; () in Bqala.OrderRecordVC.handelApi2() -&gt; ()"
+                  moduleName = "Bqala"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Movies/udemy%20swift4/projects/mansoura/Bqala/Bqala/Delevery/Controller/orderRecord/OrderRecordVC.swift"
+                  timestampString = "582217862.272817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

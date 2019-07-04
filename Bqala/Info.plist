@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Use camera</string>
+	<string>Use camera for your personal image</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string> photo use</string>
 	<key>UIAppFonts</key>
@@ -49,5 +49,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>we need your location to get your order</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>we need your location to get your order</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>we need your location to get your order</string>
 </dict>
 </plist>

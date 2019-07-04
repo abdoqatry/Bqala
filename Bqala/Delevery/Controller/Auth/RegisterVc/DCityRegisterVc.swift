@@ -23,7 +23,9 @@ class DCityRegisterVc: BaseController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
+        navigationController?.navigationBar.tintColor = .black
     }
     
     
@@ -34,15 +36,31 @@ class DCityRegisterVc: BaseController {
         }
     }
     @objc func notCheck(){
-        if mainView.checkButton.isHidden == true {
-            mainView.notcheckButton.isHidden = true
-            mainView.checkButton.isHidden = false
+        if mainView.checkButton2.isHidden == true {
+            mainView.notcheckButton2.isHidden = true
+            mainView.checkButton2.isHidden = false
+        }
+    }
+    
+    @objc func ischeck2(){
+        if mainView.notcheckButton2.isHidden == true{
+            mainView.checkButton2.isHidden = true
+            mainView.notcheckButton2.isHidden = false
+        }
+    }
+    @objc func notCheck2(){
+        if mainView.checkButton2.isHidden == true {
+            mainView.notcheckButton2.isHidden = true
+            mainView.checkButton2.isHidden = false
         }
     }
     
     func settarget(){
         mainView.notcheckButton.addTarget(self, action: #selector(notCheck), for: .touchUpInside)
         mainView.checkButton.addTarget(self, action: #selector(ischeck), for: .touchUpInside)
+        
+        mainView.notcheckButton2.addTarget(self, action: #selector(notCheck2), for: .touchUpInside)
+        mainView.checkButton2.addTarget(self, action: #selector(notCheck2), for: .touchUpInside)
     }
 
 

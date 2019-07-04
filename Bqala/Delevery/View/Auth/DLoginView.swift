@@ -51,7 +51,7 @@ class DLoginView: UIView {
     }()
     var phonenumber : UITextField = {
        let text = UITextField()
-        text.placeholder = "phone number or mail"
+        text.placeholder = "mail"
         text.keyboardType = .asciiCapableNumberPad
         text.keyboardType = .asciiCapable
 //        text.backgroundColor = .green

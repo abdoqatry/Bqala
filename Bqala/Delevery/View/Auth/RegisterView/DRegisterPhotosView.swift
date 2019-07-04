@@ -44,6 +44,7 @@ class DRegisterPhotosView: UIView {
     var user : UITextField = {
         let text = UITextField()
         text.text = "photo of identity"
+        text.isUserInteractionEnabled = false
         //        text.keyboardType = .asciiCapableNumberPad
         //        text.keyboardType = .asciiCapable
 //        text.isSecureTextEntry = true

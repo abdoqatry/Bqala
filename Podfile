@@ -15,6 +15,14 @@ target 'Bqala' do
    pod 'SVProgressHUD'
    pod 'IQKeyboardManagerSwift'
      pod 'MOLH'
+     pod 'TabPageViewController'
+     pod "MBCircularProgressBar"
+      pod 'Cosmos'
+       pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
 
 
 end
